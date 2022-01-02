@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<tab>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        background-color: #EFEFEF;
+    }
+  header{
+     
+      position: fixed;
+      width: 1380px;
+      padding: 6px;
+      margin-top: 0px;
+      border-bottom: 1px solid;
+      background-color: white;
+  }
+ header input{
+    margin-left: 260px;
+    height: 40px;
+    width: 380px;
+    text-align: center;
+    border-radius: 5px ;
+    background-color: #EFEFEF;
+ }
+.drive{
+    height: 20px;
+    width: 20px;
+}
+header h3{
+    display: inline;
+}
+.set{
+    height: 20px;
+    width: 20px;
+    margin-left: 220px;
+}
+.sidenav{
+    position: fixed;
+   
+    height: 900px;
+    width: 300px;
+    /* margin-top: 53px; */
+    
+}
+.sidenav button{
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 160px;
+    height: 30px;
+    border: none;
+    padding: 4px;
+}
+section{
+    position: fixed;
+   background-color: white;
+    margin-left:300px;
+    width: 1380px;
+    height: 40px;
+    border-bottom: 1px solid;
+}
+.left{
+    background: transparent;
+    border: none;
+}
+.left:hover{
+    box-shadow: -1px 10px 30px 0px rgba(105, 90, 166, 0.75);
+    transform: translateY(-1px);
+    color: blue;
+   
+}
+.right{
+    margin-left: 680px;
+}
+
+section button{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.container img{
+    height: 100px;
+    width: 100px;
+}
+ .container{
+    margin-left:300px;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+ }
+ .dnav{
+     margin-top: 5px;
+     margin-left: 15px;
+     border-top: solid 1px;
+ }
+ .sidenav>button:hover{
+    box-shadow: -1px 10px 30px 0px rgba(105, 90, 166, 0.75);
+    transform: translateY(-1px);
+    color: blue;
+    border-radius: 6px;
+ }
+ .right:hover{
+    box-shadow: -1px 10px 20px 0px rgba(105, 90, 166, 0.75);
+    transform: translateY(-1px);
+    color: blue;
+ }
+ 
+ 
+ a{
+    color: black;
+    text-decoration: none;
+ }
+.none{
+    display: none;
+
+}
+.list{
+    margin-left: 350px;
+    margin-top: 20px;
+}
+ul{
+    border-bottom: .5px groove ;
+    padding: 4px;
+   
+}
+ul img{
+    height: 20px;
+    width: 20px;
+}
+ 
+</style>
+<body>
+   <header>
+       <img  class="drive" src="./drive.png" alt="">
+       <h3>Drive</h3>
+       
+       <input type="search" placeholder=" 🔍 Search in drive">
+       <img class="set" src="./set.png"/>
+      
+       </header>
+       <br>
+       <br>
+       <br>
+       <div class="sidenav">
+           <button>🚘My Drive</button>
+           <br>
+           <button>💻Computers</button>
+           <br>
+           <button>🔃Shared with me</button>
+           <br>
+           <button>🕜Recent</button>
+           <br>
+           <button>⭐Starred</button>
+           <br>
+           <button>❌Trash</button>
+           <div class="dnav">
+        <h3>☁️  Storage</h3>   
+        <input type="range"/>
+        <h3><small> 836MB of 15GB Used</small></h3>   
+           </div>
+    </div>
+   
+    <section>
+       <button class="left">My Drive⬇️</button>
+       <button class="right" id="btn" autofocus>✔️</button>
+    </section>
+    <div>
+<div class="container" id="aa">
+   
+    <div class="card">
+        <img src="./IMG20190212140757.jpg" />
+        <h5> <span>IMG20190212140757</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./IMG20190304123030_01.jpg" />
+        <h5> <span>IMG20190304123030</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./IMG20200731192911.jpg" />
+        <h5> <span>IMG20200731192911</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./Snapchat-1127613876.jpg"/>
+        <h5> <span>Snapchat-1127613876</span></h5>
+    </div>
+    <div class="card">
+        <img src="./IMG20190212140757.jpg" />
+        <h5> <span>IMG20190212140757</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./IMG20190304123030_01.jpg" />
+        <h5> <span>IMG20190304123030</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./IMG20200731192911.jpg" />
+        <h5> <span>IMG20200731192911</span></h5>
+    </div>
+    <div class="card" >
+        <img src="./Snapchat-1127613876.jpg"/>
+        <h5> <span>Snapchat-1127613876</span></h5>
+    </div>
+</div>
+    <div class="list none" id="open">
+        <li>
+          <ul><img src="./IMG20190212140757.jpg"><span></span> <a href="./IMG20190212140757.jpg">IMG20190212140757.jpg</a></ul>
+            <ul><img src="./IMG20190304123030_01.jpg" alt=""> <a href="./IMG20190304123030_01.jpg">IMG20190304123030_01.jpg</a></ul>
+            <ul><img src="./IMG20200731192911.jpg" alt=""><a href="./IMG20200731192911.jpg">IMG20200731192911.jpg</a></ul>
+            <ul><img src="./Snapchat-1127613876.jpg" alt=""><a href="./Snapchat-1127613876.jpg">Snapchat-1127613876.jpg</a></ul>
+            <ul><img src="./IMG20190212140757.jpg" alt=""><a href="./Snapchat-1238149404.jpg">Snapchat-1238149404.jpg</a></ul>
+            <ul><img src="./IMG20190304123030_01.jpg" alt=""><a href="./Snapchat-440467862.jpg">Snapchat-440467862.jpg</a></ul>
+            <ul><img src="./IMG20200731192911.jpg" alt=""><a href="./Snapchat-678360499.jpg">Snapchat-678360499.jpg</a></ul>
+            <ul><img src="./Snapchat-1127613876.jpg" alt=""><a href="./Snapchat-754235478.jpg">Snapchat-754235478.jpg</a></ul>
+        </li>
+    </div>
+
+<script>
+   let open_btn = document.getElementById('btn');
+open_btn.addEventListener('click', function() {
+    let sidenav = document.getElementById('open');
+    sidenav.classList.remove('none');
+  
+    
+})
+
+
+let close_btn = document.getElementById('btn');
+
+close_btn.addEventListener('click', function() {
+    let sidenav = document.getElementById('aa');
+    sidenav.classList.add('none');
+});
+
+</script>
+    
+
+</body>
+</html>
